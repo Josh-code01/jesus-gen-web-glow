@@ -40,8 +40,11 @@ const Mission = () => {
               <p>
                 Our vision is to develop confident, compassionate, and competent individuals who will become positive change-makers in their communities and beyond.
               </p>
-              <p className="font-semibold text-primary">
-                "Educating minds, nurturing hearts, shaping futures."
+              <p className="font-semibold text-primary text-xl">
+                "Heart, Head and Hand"
+              </p>
+              <p className="text-base italic">
+                Quality Education in a Godly Environment
               </p>
             </div>
           </div>

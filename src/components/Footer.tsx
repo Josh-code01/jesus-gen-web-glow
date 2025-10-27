@@ -1,4 +1,5 @@
-import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import schoolLogo from '@/assets/school-logo.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -23,17 +24,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
-                <GraduationCap className="w-7 h-7 text-primary-foreground" />
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src={schoolLogo} 
+                alt="Jesus Generation Schools Logo" 
+                className="w-14 h-14 object-contain"
+              />
               <div>
-                <h3 className="text-xl font-bold">Jesus Generation</h3>
-                <p className="text-sm text-background/70">Schools</p>
+                <h3 className="text-xl font-bold">Jesus Generation Schools</h3>
+                <p className="text-sm text-background/70">Heart, Head and Hand</p>
               </div>
             </div>
             <p className="text-background/70 mb-6 leading-relaxed">
-              Empowering future leaders through excellence in education, integrity, and innovation.
+              Quality Education in a Godly Environment. Empowering future leaders through excellence.
             </p>
             <div className="flex gap-3">
               <a
@@ -108,20 +111,20 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <span className="text-background/70">
-                  123 Education Street,<br />
-                  Learning City, LC 12345
+                  New-Weija,<br />
+                  Accra, Ghana
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-background/70 hover:text-primary transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+233592221898" className="text-background/70 hover:text-primary transition-colors">
+                  0592 221 898
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@jesusgeneration.edu" className="text-background/70 hover:text-primary transition-colors">
-                  info@jesusgeneration.edu
+                <a href="mailto:jesusgenerationschools@gmail.com" className="text-background/70 hover:text-primary transition-colors break-all">
+                  jesusgenerationschools@gmail.com
                 </a>
               </li>
             </ul>

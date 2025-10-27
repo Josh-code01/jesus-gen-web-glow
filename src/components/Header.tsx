@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import schoolLogo from '@/assets/school-logo.jpg';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,13 +33,15 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-8">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <GraduationCap className="w-7 h-7 text-primary-foreground" />
-            </div>
+          <a href="#home" className="flex items-center gap-3 group">
+            <img 
+              src={schoolLogo} 
+              alt="Jesus Generation Schools Logo" 
+              className="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-110"
+            />
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-foreground">Jesus Generation</h1>
-              <p className="text-xs text-muted-foreground">Schools</p>
+              <h1 className="text-xl font-bold text-foreground">Jesus Generation Schools</h1>
+              <p className="text-xs text-primary font-medium">Heart, Head and Hand</p>
             </div>
           </a>
 

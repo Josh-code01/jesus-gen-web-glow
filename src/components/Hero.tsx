@@ -30,7 +30,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Where academic excellence meets character development. Join a community dedicated to nurturing every student's potential.
+              Quality Education in a Godly Environment. Developing Heart, Head and Hand for excellence and holistic growth.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
