@@ -10,6 +10,8 @@ import gallery7 from '@/assets/gallery-7.jpg';
 import gallery8 from '@/assets/gallery-8.jpg';
 import gallery9 from '@/assets/gallery-9.jpg';
 import gallery10 from '@/assets/gallery-10.jpg';
+import gallery11 from '@/assets/gallery-11.jpg';
+import gallery12 from '@/assets/gallery-12.jpg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -25,6 +27,8 @@ const Gallery = () => {
     { src: gallery8, alt: 'Staff team during school excursion' },
     { src: gallery9, alt: 'Students and staff on educational field trip' },
     { src: gallery10, alt: 'School community outing to natural landmark' },
+    { src: gallery11, alt: 'Students in green uniforms during outdoor activity' },
+    { src: gallery12, alt: 'Teachers and students gathered during school excursion' },
   ];
 
   return (
