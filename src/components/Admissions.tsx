@@ -97,8 +97,13 @@ const Admissions = () => {
         </div>
 
         <div className="text-center">
-          <Button className="accent-button text-lg px-8 py-6">
-            Download Application Form
+          <Button 
+            className="accent-button text-lg px-8 py-6"
+            asChild
+          >
+            <a href="/application-form.pdf" download="Jesus-Generation-School-Application-Form.pdf">
+              Download Application Form
+            </a>
           </Button>
         </div>
       </div>
