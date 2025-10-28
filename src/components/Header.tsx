@@ -62,7 +62,9 @@ const Header = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
-            <Button className="accent-button">Apply Now</Button>
+            <Button asChild className="accent-button">
+              <a href="#admissions">Apply Now</a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,7 +93,9 @@ const Header = () => {
                 </li>
               ))}
               <li className="px-4 pt-2">
-                <Button className="w-full accent-button">Apply Now</Button>
+                <Button asChild className="w-full accent-button">
+                  <a href="#admissions">Apply Now</a>
+                </Button>
               </li>
             </ul>
           </div>
